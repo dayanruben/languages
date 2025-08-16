@@ -16,6 +16,8 @@ function clean_benchmark {
   rm scala/code scala/code-native
   rm -rf rust/{Cargo.lock,target} ../lib/rust/{Cargo.lock,target}
   rm -rf kotlin/code.jar
+  rm -rf kotlin/META-INF
+  rm -rf kotlin/*.class
   rm kotlin/code.kexe
   rm dart/code
   rm -rf inko/build inko/code
