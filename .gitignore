@@ -38,6 +38,7 @@ zig-out
 */clojure-native-image/run
 */java-native-image/jvm.run
 */java-native-image/run
+*/kotlin/META-INF/
 loops/*/code
 loops/*/run
 fibonacci/*/code
