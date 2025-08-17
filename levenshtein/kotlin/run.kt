@@ -15,10 +15,10 @@ fun distances(strings: List<String>): List<Int> {
 
 fun main(args: Array<String>) {
     val runMs = args[0].toLong()
-    val warmupMS = args[1].toLong()
+    val warmupMs = args[1].toLong()
     val inputPath = args[2];
     val strings = File(inputPath).readLines()
-    Benchmark.run({ distances(strings) }, warmupMS);
+    Benchmark.run({ distances(strings) }, warmupMs);
     val results = Benchmark.run({ distances(strings) }, runMs);
     val summedResults = results.withResult(results.result().sum())
     println(Benchmark.formatResults(summedResults));

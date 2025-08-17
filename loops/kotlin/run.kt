@@ -15,9 +15,9 @@ fun loops(u: Int): Int{
 
 fun main(args: Array<String>) {
     val runMs = args[0].toLong()
-    val warmupMS = args[1].toLong()
+    val warmupMs = args[1].toLong()
     val n = args[2].toInt()
-    Benchmark.run( { loops(n) }, warmupMS);
-    val results = Benchmark.run( { loops(n) }, runMs);
+    Benchmark.run({ loops(n) }, warmupMs);
+    val results = Benchmark.run({ loops(n) }, runMs);
     println(Benchmark.formatResults(results));
 }
